@@ -50,6 +50,9 @@ h1{
     transition: all 0.5s;
     cursor: pointer;
 }
+#bot{
+    border-radius: 50px;
+}
 #btn:hover{
     box-shadow:2px 2px 10px rgb(21, 145, 207),2px 2px 10px rgb(201, 41, 116);
     letter-spacing: 2px;
