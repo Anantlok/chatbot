@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Contact Us{% endblock %}
+{% block content %}
+
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<br>
+<br>
+<h1>Contact Us</h1>
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT"/>
+</form>
+</body>
+</html>
+    {% endblock %}

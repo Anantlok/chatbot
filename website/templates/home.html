@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% block title %}ChatBot{% endblock %}
+{% block content %}
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>jarvis, My virtual assistent</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+ <body>
+ <div class="intro">
+    <br>
+    <br>
+    <h1>I'm <span id="name">Jarvis</span>,your <span id="va">Virtual Assistant</span></h1>
+    <br>
+    <img src="{{ url_for('static', filename='mic.jpg') }}" alt="voice" id="voice">
+    <br>
+    <button id="btn"><img src="{{ url_for('static', filename='mic.jpg') }}" class="one" src="ocean.jpg" width="40px" height="40px"><span id="content">Click Here For Talk To Me</span></button>
+    <br>
+    <br>
+    <br>
+    <img src="{{ url_for('static', filename='bot.jpeg') }}" alt="" id="bot" width="200px" height="200px" >
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</div>
+ </body>
+{% endblock %}
